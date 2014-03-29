@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta property="fb:app_id" content="316931735024618"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<meta name="Description" content="Listen to fresh music from all genres, updated daily, hand-picked for taste, variety and freshness" />
+		<title>Radio Flote | New Music For A New World</title>
+		
+		<link rel="icon" 
+      			type="image/png" 
+      			href="/images/favicon.png">
+		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="/components/1-bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/components/10-bootstrap-editable/css/bootstrap-editable.min.css">
+<link rel="stylesheet" type="text/css" href="/components/100-front-end/css/front-end.min.css">
+	</head>
+
+	<body>
+		<div id="page-container">
+			<div id="page-header">
+				<div class="logo">
+					<img src="/images/logo_circle.png" />
+				</div>
+				<div id="page-logininfo"></div>
+				<div class="buttons">
+					<a href="http://facebook.com/radioflote" target="_blank"><img style="margin-top: 6px" class="rollover" src="/images/facebook.png" /></a>
+					<a href="http://twitter.com/radioflote" target="_blank"><img style="margin-top: 6px" class="rollover" src="/images/twitter.png" /></a>
+					<a href="https://itunes.apple.com/ph/app/radio-flote/id535520132?mt=8" target="blank">
+						<img class="rollover" src="/images/apple.png" />
+					</a>
+					<a href="https://play.google.com/store/apps/details?id=com.flote.radio" target="blank">
+						<img class="rollover" src="/images/droid.png" />
+					</a>
+				</div>
+			</div>
+			<div id="page-menubar">
+			<div class="menu-container">
+				<div class="leftbar menuitem-container">
+					<div class="menuitem menuitem-home"><a href="/home" class="dynalink"><sup>MY</sup><i class="glyphicon glyphicon-music"></i></a></div>
+					<div class="menuitem menuitem-channels"><a href="/genre" class="dynalink">CHANNELS</a></div>
+					<div class="menuitem menuitem-artists"><a href="/artists" class="dynalink">ARTISTS</a></div>
+				</div>
+				<div class="rightbar menuitem-container">
+					<div class="menuitem spinner"></div>
+					<div class="menuitem-search menuitem">
+						<div class="search-icon-position"><i class="glyphicon glyphicon-search search-icon-position"></i></div>
+						<div>
+						<input id="searchinput" type="text" class="form-control typeahead" autocomplete=off placeholder="name,city,genre..."/>
+						</div>
+					</div>
+				</div>
+				<div id="page-player">
+					<div class="social">
+						<img class="facebook rollover" src="/images/facebook_small.png" onclick="facebookSongShare()" />
+						<img class="twitter rollover" style="margin-left: -5px" src="/images/twitter_small.png"  onclick="twitterSongShare()"/>
+					</div>
+					<img class="artwork" src="/images/blank.png"/>
+					<div class="playerinfo">
+						<p class="channelinfo" class="channelinfo"></p>
+						<p class="song"></p>
+						<p class="artist"></p>
+						<div class="time">00:00:00</div>
+					</div>
+					<div class="controls">
+						<img class="rollover" src="/images/prev.png" onclick="prevSong() ;"/>
+						<img class="playpause rollover" src="/images/play.png" />
+						<img class="rollover" src="/images/next.png" onclick="nextSong() ;"/>
+					</div>
+				</div>
+			</div>
+			<div id="page-submenubar">
+				<div class="submenu submenu-channels">
+					<div class="submenuitem submenuitem-genre"><a href="/genre" class="dynalink">GENRE</a></div>
+					<div class="submenuitem submenuitem-zones"><a href="/zones" class="dynalink"> ZONES</a></div>
+					<div class="submenuitem submenuitem-events"><a href="/events" class="dynalink">GIGS</a></div>
+				</div>
+				<div class="submenu submenu-artists">
+					<div class="submenuitem submenuitem-alphabetical"><a href="/artists" class="dynalink">ALPHABETICAL</a></div>
+					<div class="submenuitem submenuitem-latest"><a href="/artists-release" class="dynalink">LATEST</a></div>
+					<div class="submenuitem submenuitem-recommended"><a href="/artists-recos" class="dynalink">YOUR TASTE</a></div>
+				</div>					
+				<div class="submenu submenu-home">
+				</div>
+			</div>
+			</div>
+			<div id="page-content">
+				 
+			</div>
+			<div id="page-sitemap">
+				<div class="column">
+					<h3>Listeners</h3>
+					<a class="dynalink" href="/page/aboutus">About Us</a><br/>
+					<a class="dynalink" href="/page/apps">Music On The Move</a><br/>
+					<a href="javascript:load_events()">Go for a show</a><br/>
+					<a class="dynalink" href="/page/moreforlisteners">Dig Deeper</a><br/>
+					<h3>Artists</h3>
+					<a class="dynalink" href="/page/whyradioflote">Why Radio Flote?</a><br/>
+					<a class="dynalink" href="/page/airyourmusicwithus">Air your music with us</a><br/>
+				</div>
+				<div class="column">
+					<h3>Partner With Us</h3>
+					<a class="dynalink" href="/page/promoteyourevent">Event Managers</a><br/>
+					<a class="dynalink" href="/page/artistcollectives">Artist Collectives</a><br/>
+					<a class="dynalink" href="/page/incampus">Radio Flote In-Campus</a><br/>
+					<h3>More Reading</h3>
+					<a class="dynalink" href="/page/press">Press Coverage</a><br/>
+					<a href="http://radioflote.tumblr.com" target="_blank">Blog</a>
+				</div>
+				<div class="column">
+					<h3>Stay In Touch</h3>
+					<a href="http://facebook.com/radioflote" target="_blank">Facebook</a> / 
+					<a href="http://twitter.com/radioflote" target="_blank">Twitter</a> /
+					<a href="https://plus.google.com/100618991396762647903/about" target="_blank">Google+</a><br/>
+					<h3>Support</h3>
+					<a class="dynalink" href="/page/listenerfaqs">Listener FAQs</a><br/>
+					<a class="dynalink" href="/page/artistfaqs">Artist FAQ</a><br/>
+					<a class="dynalink" href="/page/contactus">Contact Us</a><br/>
+				</div>
+	
+			</div>
+			<div id="footer">
+				<small>&copy; Flote Mobile Technologies Private Limited, 2012. Radio Flote&#8482; is a registered trademark of Flote Mobile Technologies Private Limited.</small>
+			</div>
+		</div>
+		<div id="fb-root"></div>
+		<script type="text/javascript" src="/components/0-jquery/js/jquery.min.js"></script>
+<script type="text/javascript" src="/components/1-bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/components/3-player/js/player.min.js"></script>
+<script type="text/javascript" src="/components/10-bootstrap-editable/js/bootstrap-editable.min.js"></script>
+<script type="text/javascript" src="/components/100-front-end/js/front-end.min.js"></script>
+		<script type="text/javascript">
+			var headerVisible=true ;
+
+			
+			$(window).scroll(function() {
+				if($(this).scrollTop()>311 && headerVisible) {
+					$('#page-menubar').addClass("page-menubar-fixed") ;
+					$('#page-content').addClass("contentadjust") ;
+					headerVisible=false ;
+				} else if($(this).scrollTop()<311 && !headerVisible) {
+					$('#page-menubar').removeClass("page-menubar-fixed") ;
+					$('#page-content').removeClass("contentadjust") ;
+					headerVisible=true ;
+				}
+				if($(this).scrollTop()>(0.6*$('#page-container').height()-285)) {
+					$('.page').trigger("loadmore") ;
+				}
+			}) ;
+
+			function hoverOn(e) {
+				var srcs=e.attr('src').split(".") ;
+				var imagePath=srcs[0]+"1."+srcs[1] ;
+				e.attr('src', imagePath) ;
+				
+			}
+
+
+			function hoverOff(e) {
+				var srcs=e.attr('src').split(".") ;
+				var imagePath=srcs[0].slice(0,-1)+"."+srcs[1] ;
+				e.attr('src', imagePath) ;
+				
+			}
+
+			function toggleDisplay(id) {
+				$(id).toggle() ;	
+			}
+
+			function FBToggleDisplay(id) {
+				$(id).toggle() ;	
+				if($(id).css("display")!="none")
+					FB.XFBML.parse() ;
+			}
+
+			function facebookShare(url) {
+    				window.open(
+      					'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(url), 
+    				 	'facebook-share-dialog', 
+      					'width=626,height=436,top=200,left=450'); 
+
+			}
+
+			function facebookSongShare() {
+				var songinfo=getCurrentSongInfo() ;
+				artist=songinfo["artist"] ;
+				title=songinfo["song"] ;
+				_gaq.push(['_trackEvent', 'Share', 'Artist', artist]);
+				_gaq.push(['_trackEvent', 'Share', 'Song', title]);
+    				window.open(
+      					'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(getCurrentSongURL()), 
+    				 	'facebook-share-dialog', 
+      					'width=626,height=436,top=200,left=450'); 
+			}
+				
+			function twitterSongShare() {
+				var songinfo=getCurrentSongInfo() ;
+				artist=songinfo["artist"] ;
+				title=songinfo["song"] ;
+				_gaq.push(['_trackEvent', 'Share', 'Artist', artist]);
+				_gaq.push(['_trackEvent', 'Share', 'Song', title]);
+    				window.open(
+      					'https://www.twitter.com/share?url='+encodeURIComponent(getCurrentSongURL()), 
+    				 	'facebook-share-dialog', 
+      					'width=626,height=436,top=200,left=450'); 
+			}
+
+			$(document).ready(function() {
+				$('.rollover').hover(function() {
+					hoverOn($(this)) ;
+				}, function() {
+					hoverOff($(this)) ;
+				}) ;
+
+
+				$('#page-player .playpause').on('click', function() {
+					togglePlay("1") ;
+				}) ;
+
+				history.replaceState({"url":window.location.href, "scrollTop":321},
+					"", window.location.href) ;
+				
+				route_with_history(window.location.href) ;
+				
+
+				
+				select_menu("channels", "genre") ;
+				
+			}) ;
+
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-37256109-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript">
+			console.log("Hash is "+location.hash) ; 
+			if(location.hash.indexOf('#!/')==0) {
+				window.location="http://radioflote.com/"+location.hash.slice(3) ;
+			}
+
+			if(location.hash.indexOf('#!')==0) {
+				window.location="http://radioflote.com/"+location.hash.slice(2) ;
+			}
+			$.fn.editable.defaults.mode = 'inline';
+			$.fn.editable.defaults.onblur='submit' ;
+
+			if(g_Release) {
+				console.log=function() {} ;
+			} else {
+				console.log("BETA detected, enabling logs and feedback") ;
+			}
+		</script>
+
+<script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/DJyy8V23Ey9Duz5wrtpPg.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+//
+// UserVoice Javascript SDK developer documentation:
+// https://www.uservoice.com/o/javascript-sdk
+//
+
+// Set colors
+UserVoice.push(['set', {
+  accent_color: '#e23a39',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+}]);
+
+// Identify the user and pass traits
+// To enable, replace sample data with actual user traits and uncomment the line
+UserVoice.push(['identify', {
+  //email:      'john.doe@example.com', // User’s email address
+  //name:       'John Doe', // User’s real name
+  //created_at: 1364406966, // Unix timestamp for the date the user signed up
+  //id:         123, // Optional: Unique id of the user (if set, this should not change)
+  //type:       'Owner', // Optional: segment your users by type
+  //account: {
+  //  id:           123, // Optional: associate multiple users with a single account
+  //  name:         'Acme, Co.', // Account name
+  //  created_at:   1364406966, // Unix timestamp for the date the account was created
+  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+  //  ltv:          1495.00, // Decimal; lifetime value of the account
+  //  plan:         'Enhanced' // Plan name for the account
+  //}
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+// Or, use your own custom trigger:
+//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+UserVoice.push(['autoprompt', {}]);
+</script>
+	</body>
+</html>
