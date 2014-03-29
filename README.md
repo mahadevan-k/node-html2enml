@@ -2,7 +2,7 @@
 
 node-html2enml is a node.js module to convert HTML to Evernote ENML.
 
-Unlike other implementations, html2enml parses the DOM tree of the HTML document and converts it to valid ENML, which results in a robust and reliable converstion
+Unlike other implementations, html2enml parses the DOM tree of the HTML document and converts it to valid ENML, which results in a robust and reliable conversion
 
 ## Usage ##
 
