@@ -1,8 +1,8 @@
 {
   "author": "mahadevan k",
   "name": "html2enml",
-  "description": "HTML to ENML convertor for Nose.JS",
-  "version": "0.1.3",
+  "description": "HTML to ENML convertor for Node.JS",
+  "version": "0.1.5",
   "license" : "GPLv3",
   "repository": {
     "url": "https://github.com/flotemaha/node-html2enml.git"
