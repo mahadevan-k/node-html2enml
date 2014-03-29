@@ -9,7 +9,7 @@ Unlike other implementations, html2enml parses the DOM tree of the HTML document
 html2enml converts any string containing HTML to ENML, returning the ENML as a string to the given callback function on success.
 
         var html2enml=require('html2enml').convert ;
-        // htmldata variable should contain HTML string
+        // the htmldata variable should contain HTML string
         // base_uri contains uri to be prepended to convert relative URLs to absolute URLs
         // base_uri can be an empty string if base url is unknown
         html2enml(htmldata, base_uri, function(enml) {
@@ -17,6 +17,13 @@ html2enml converts any string containing HTML to ENML, returning the ENML as a s
         }, function() {
           // failure, inform user
         }) ;
+
+
+For testing, you can use the command-line tool:
+
+	html2enml <html-file>
+
+The package contains example HTML files in the 'testfiles' directory.
         
 ## Features ##
 

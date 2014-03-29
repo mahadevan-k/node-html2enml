@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 fs=require('fs') ;
 html2enml=require('../lib/html2enml').convert ;
 
