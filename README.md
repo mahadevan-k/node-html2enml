@@ -10,7 +10,7 @@ Install html2enml via npm:
 
         npm install html2enml
 
-Invote html2enml from a node.js script as follows:
+Call html2enml from a node.js script as follows:
 
         var html2enml=require('html2enml').convert ;
         // the htmldata variable should contain HTML string
