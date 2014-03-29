@@ -1,0 +1,16 @@
+fs=require('fs') ;
+html2enml=require('../lib/html2enml').convert ;
+
+if(process.argv.length>2) {
+	fs.readFile(process.argv[2], 'utf8', function(error, data) {
+		html2enml(data, "http://radioflote.com", function(enml) {
+			console.log("Looks like things went fine!") ;
+			console.log(enml) ;
+		}, function(enml) { 
+			console.log("ERROR: "+enml) ;
+		}) ;
+
+	}) ;
+} else {
+	console.log("Usage: html2enml <html-file>") ;
+}

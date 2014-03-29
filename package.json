@@ -1,0 +1,23 @@
+
+  "author": "mahadevan k",
+  "name": "html2enml",
+  "description": "HTML to ENML convertor for Nose.JS",
+  "version": "0.1.1",
+  "license" : "GPLv3",
+  "repository": {
+    "url": "https://github.com/flotemaha/node-html2enml.git"
+  },
+  "main": "./lib/html2enml",
+  "bin": {
+    "html2enml": "./bin/html2enml"
+  },
+  "dependencies": {
+    "xmldom":">=0.1.19",
+    "xhr2":">=0.0.7"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
+}
