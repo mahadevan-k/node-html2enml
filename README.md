@@ -44,7 +44,9 @@ GPLv3
 
 ## Known Issues ##
 
-The logic of HTML 2 ENML conversion is rock-solid and compliant with the ENML standards,
-but testing has been done on only a few documents.
+I wrote the conversion based on ENML standards,
+but I've tested it on very few documents.
 
-If you have issues with conversions, please bring it to my notice.
+If you have issues with conversions, please mail me at maha@radioflote.com with the issue and a copy of the HTML document/URL for reference.
+
+Thank you.
